@@ -1,0 +1,1 @@
+ssh -i jihangec3.pem ubuntu@ec2-13-58-6-178.us-east-2.compute.amazonaws.com

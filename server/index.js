@@ -96,7 +96,10 @@ app.post('/cart', async (req, res) => {
 });
 
 app.get('/cart', async (req, res) => {
-  var result = await Cart.find({}, { sku_id: 1, count: 1, _id: 0 });
+  var result = await Cart.aggregate([
+    { $match: {} },
+    { $project: {sku_id: 1, count: 1, _id: 0 }}
+  ]);
   result.toArray((err, docs) => {
     res.status(200).send(docs);
   });

@@ -1,0 +1,6 @@
+.git
+node_modules
+npm-debug.log
+jihangec2.pem
+jihangec3.pem
+database/data

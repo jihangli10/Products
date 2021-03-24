@@ -1,8 +1,11 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://localhost/SDC_products";
+var url = "mongodb://13.58.6.178:27071/SDC_products";
 var _db;
 const connectToServer = function( callback ) {
-  MongoClient.connect( url,  { useNewUrlParser: true }, function( err, client ) {
+  MongoClient.connect(url, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true
+    }, ( err, client ) => {
     if (err) console.log(err);
     _db = client.db('SDC_products')
     console.log('Connected to MongoDB @products!')

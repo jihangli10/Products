@@ -15,8 +15,8 @@
     "mocha": "^8.3.2"
   },
   "scripts": {
-    "test": "test",
-    "start": "npx nodemon server/index.js"
+    "test": "mocha test/index.js --bail",
+    "start": "node server/index.js"
   },
   "repository": {
     "type": "git",
