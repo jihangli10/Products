@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var url = "mongodb://13.58.6.178:27071/SDC_products";
+var url = "mongodb://username:password@13.58.6.178:27071/SDC_products";
 var _db;
 const connectToServer = function( callback ) {
   MongoClient.connect(url, {
