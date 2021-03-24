@@ -5,3 +5,7 @@ jihangec2.pem
 jihangec3.pem
 database/data
 products.json
+ec2-db.sh
+ec2-lb.sh
+ec2-s1.sh
+ec2-s2.sh
